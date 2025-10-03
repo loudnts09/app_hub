@@ -7,4 +7,34 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="brand_primary">#4F46E5</color>        <!-- Indigo 600 -->
+    <color name="brand_secondary">#0EA5E9</color>      <!-- Sky 500 -->
+    <color name="brand_tertiary">#22C55E</color>       <!-- Green 500 -->
+
+    <color name="surface">#FFFFFFFF</color>
+    <color name="on_surface">#151515</color>
+    <color name="surface_variant">#F3F4F6</color>      <!-- Cinza 100 -->
+    <color name="on_surface_variant">#3F3F46</color>   <!-- Cinza 700 -->
+
+    <color name="display_bg">#0B1020</color>           <!-- Fundo display (quase preto azulado) -->
+    <color name="display_text">#E5E7EB</color>         <!-- Texto no display -->
+    <color name="display_subtext">#9CA3AF</color>
+
+    <color name="digit_bg">#FFFFFF</color>
+    <color name="digit_fg">#111827</color>
+    <color name="op_bg">@color/surface_variant</color>
+    <color name="op_fg">@color/on_surface_variant</color>
+    <color name="accent_bg">@color/brand_primary</color>
+    <color name="accent_fg">@android:color/white</color>
+
+    <color name="ripple">#1F000000</color>
+
+    <color name = "clr_bg"> #FAFAFA </color>
+    <color name="clr_primary">#2962FF</color>
+    <color name="clr_primary_dark">#1B44B8</color>
+    <color name="clr_secondary">#00C853</color>
+    <color name="clr_text_title">#616161</color>
+    <color name="clr_score">#212121</color>
+    <color name="clr_divider">#E0E0E0</color>
+    <color name="clr_btn_text">#FFFFFF</color>
 </resources>

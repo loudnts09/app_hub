@@ -1,0 +1,9 @@
+<resources>
+    <style name="Theme.Pratica2_java" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/clr_primary</item>
+        <item name="colorPrimaryVariant">@color/clr_primary_dark</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Theme.CalculadoraApp" parent="Theme.Material3.DayNight.NoActionBar" />
+</resources>

@@ -2,4 +2,36 @@
 <resources>
 
     <style name="Theme.HubApplication" parent="android:Theme.Material.Light.NoActionBar" />
+    <!-- Tema base Material 3 com suporte a DayNight -->
+    <style name="Theme.CalculadoraApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Cores principais -->
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/brand_secondary</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+        <item name="colorTertiary">@color/brand_tertiary</item>
+
+        <!-- Superfícies -->
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/on_surface_variant</item>
+
+        <!-- Forma/raio padrão dos componentes -->
+        <item name="shapeAppearanceSmallComponent">@style/Shape.Radius</item>
+        <item name="shapeAppearanceMediumComponent">@style/Shape.Radius</item>
+        <item name="shapeAppearanceLargeComponent">@style/Shape.Radius</item>
+
+        <!-- Tipografia (opcional, melhora números grandes) -->
+        <item name="textAppearanceHeadlineLarge">@style/Text.HeadlineLarge</item>
+        <item name="textAppearanceTitleMedium">@style/Text.TitleMedium</item>
+
+        <!-- Ripple sutil -->
+        <item name="android:colorControlHighlight">@color/ripple</item>
+    </style>
+    <style name="Theme.Pratica2_java" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/clr_primary</item>
+        <item name="colorPrimaryVariant">@color/clr_primary_dark</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+    </style>
 </resources>

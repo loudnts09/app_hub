@@ -1,47 +1,27 @@
 package com.example.hubapplication
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.hubapplication.ui.theme.HubApplicationTheme
+import android.widget.LinearLayout
+import androidx.appcompat.app.AppCompatActivity
+import com.example.hubapplication.calculator.CalculatorActivity
+import com.example.hubapplication.hoopscore.HoopscoreActivity
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            HubApplicationTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
+        setContentView(R.layout.activity_main)
+
+        val btnApp1 = findViewById<LinearLayout>(R.id.btnApp1)
+        val btnApp2 = findViewById<LinearLayout>(R.id.btnApp2)
+        val btnApp3 = findViewById<LinearLayout>(R.id.btnApp3)
+
+        btnApp1.setOnClickListener {
+            startActivity(Intent(this, CalculatorActivity::class.java))
         }
-    }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    HubApplicationTheme {
-        Greeting("Android")
+        btnApp2.setOnClickListener {
+            startActivity(Intent(this, HoopscoreActivity::class.java))
+        }
     }
 }

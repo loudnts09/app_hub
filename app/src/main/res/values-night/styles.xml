@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Estilo real que usamos no tema -->
+    <style name="Shape.Radius">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <!-- Alias opcional para evitar o erro se algum lugar referir @style/Shape -->
+    <style name="Shape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <!-- (restante dos seus estilos, ex.: CalcButton.*, Text.*) -->
+</resources>
