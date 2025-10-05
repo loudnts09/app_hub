@@ -14,14 +14,14 @@ class MainActivity : AppCompatActivity() {
 
         val btnApp1 = findViewById<LinearLayout>(R.id.btnApp1)
         val btnApp2 = findViewById<LinearLayout>(R.id.btnApp2)
-        val btnApp3 = findViewById<LinearLayout>(R.id.btnApp3)
+        // val btnApp3 = findViewById<LinearLayout>(R.id.btnApp3)
 
         btnApp1.setOnClickListener {
-            startActivity(Intent(this, CalculatorActivity::class.java))
+            startActivity(Intent(this, HoopscoreActivity::class.java))
         }
 
         btnApp2.setOnClickListener {
-            startActivity(Intent(this, HoopscoreActivity::class.java))
+            startActivity(Intent(this, CalculatorActivity::class.java))
         }
     }
 }

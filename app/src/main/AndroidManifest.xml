@@ -25,8 +25,14 @@
         </activity>
 
         <!-- Outras Activities (apps) -->
-        <activity android:name=".calculator.CalculatorActivity" />
-        <activity android:name=".hoopscore.HoopscoreActivity" />
+        <activity
+            android:name=".calculator.CalculatorActivity"
+            android:label="@string/title_activity_calculator"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".hoopscore.HoopscoreActivity"
+            android:label="@string/title_activity_hoopscore"
+            android:parentActivityName=".MainActivity"/>
 
     </application>
 

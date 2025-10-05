@@ -4,11 +4,11 @@ import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.ComponentActivity
 import com.example.hubapplication.calculator.Calculator
 import com.example.hubapplication.R
+import androidx.appcompat.app.AppCompatActivity
 
-class CalculatorActivity : ComponentActivity() {
+class CalculatorActivity : AppCompatActivity() {
 
     private lateinit var tvDisplay: TextView
     private lateinit var tvHistorico: TextView
@@ -17,6 +17,8 @@ class CalculatorActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calculator)
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         tvDisplay = findViewById(R.id.txtResultado)
         tvHistorico = findViewById(R.id.txtHistorico)

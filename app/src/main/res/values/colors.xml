@@ -37,4 +37,5 @@
     <color name="clr_score">#212121</color>
     <color name="clr_divider">#E0E0E0</color>
     <color name="clr_btn_text">#FFFFFF</color>
-</resources>
+    <color name="hub_text_color">#111827</color>
+    </resources>

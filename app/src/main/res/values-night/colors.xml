@@ -38,4 +38,5 @@
     <color name="accent_fg">@android:color/black</color>
 
     <color name="ripple">#22FFFFFF</color>
-</resources>
+    <color name="hub_text_color">#111827</color>
+    </resources>

@@ -2,10 +2,10 @@ package com.example.hubapplication.hoopscore
 
 import android.os.Bundle
 import android.widget.Button
-import androidx.activity.ComponentActivity
 import com.example.hubapplication.R
+import androidx.appcompat.app.AppCompatActivity
 
-class HoopscoreActivity : ComponentActivity() {
+class HoopscoreActivity : AppCompatActivity() {
 
     private val STREAK_THRESHOLD = 3
     private lateinit var teamA: Team
@@ -14,6 +14,8 @@ class HoopscoreActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hoopscore)
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         // Inicializa times
         teamA = Team(

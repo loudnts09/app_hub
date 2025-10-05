@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Hub Application</string>
+    <string name="app_name">Hub</string>
+    <string name="title_activity_hoopscore">CestaScore</string>
+    <string name="title_activity_calculator">Calculadora</string>
 </resources>
