@@ -6,6 +6,7 @@ import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.hubapplication.calculator.CalculatorActivity
 import com.example.hubapplication.hoopscore.HoopscoreActivity
+import com.example.hubapplication.notes.NotesActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnApp1 = findViewById<LinearLayout>(R.id.btnApp1)
         val btnApp2 = findViewById<LinearLayout>(R.id.btnApp2)
-        // val btnApp3 = findViewById<LinearLayout>(R.id.btnApp3)
+        val btnApp3 = findViewById<LinearLayout>(R.id.btnApp3)
 
         btnApp1.setOnClickListener {
             startActivity(Intent(this, HoopscoreActivity::class.java))
@@ -22,6 +23,9 @@ class MainActivity : AppCompatActivity() {
 
         btnApp2.setOnClickListener {
             startActivity(Intent(this, CalculatorActivity::class.java))
+        }
+        btnApp3.setOnClickListener {
+            startActivity(Intent(this, NotesActivity::class.java))
         }
     }
 }

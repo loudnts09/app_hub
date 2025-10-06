@@ -33,6 +33,18 @@
             android:name=".hoopscore.HoopscoreActivity"
             android:label="@string/title_activity_hoopscore"
             android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".notes.NotesActivity"
+            android:label="Notes"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".notes.AddNoteActivity"
+            android:exported="false" />
+
+        <!-- Atualizar nota -->
+        <activity
+            android:name=".notes.UpdateNoteActivity"
+            android:exported="false" />
 
     </application>
 
