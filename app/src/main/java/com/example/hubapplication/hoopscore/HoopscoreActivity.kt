@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.widget.Button
 import com.example.hubapplication.R
 import androidx.appcompat.app.AppCompatActivity
+import com.example.hubapplication.utils.Logger
+import com.example.hubapplication.utils.Modules
 
 class HoopscoreActivity : AppCompatActivity() {
 
@@ -16,6 +18,8 @@ class HoopscoreActivity : AppCompatActivity() {
         setContentView(R.layout.activity_hoopscore)
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        Logger.d(Modules.BASKETBALL, "Usuário iniciou o app de basquete")
 
         // Inicializa times
         teamA = Team(
@@ -65,6 +69,8 @@ class HoopscoreActivity : AppCompatActivity() {
             .setIcon(R.mipmap.ic_launcher)
             .setPositiveButton("OK", null)
             .show()
+
+        Logger.i(Modules.BASKETBALL, "Jogo reiniciado: Time A vs Time B")
     }
 
     private fun editTeamName(team: Team) {
@@ -80,6 +86,7 @@ class HoopscoreActivity : AppCompatActivity() {
                 if (novoNome.isNotBlank()) {
                     team.name = novoNome
                     team.nameView.text = novoNome
+                    Logger.i(Modules.BASKETBALL, "Novo time definido: " + team.name)
                 }
             }
             .setNegativeButton("Cancelar", null)

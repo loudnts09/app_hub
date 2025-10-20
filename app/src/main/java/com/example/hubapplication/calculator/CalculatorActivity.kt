@@ -7,7 +7,8 @@ import android.widget.Toast
 import com.example.hubapplication.calculator.Calculator
 import com.example.hubapplication.R
 import androidx.appcompat.app.AppCompatActivity
-
+import com.example.hubapplication.utils.Logger
+import com.example.hubapplication.utils.Modules
 class CalculatorActivity : AppCompatActivity() {
 
     private lateinit var tvDisplay: TextView
@@ -28,6 +29,8 @@ class CalculatorActivity : AppCompatActivity() {
             calc.fromBundle(it)
             updateDisplay()
         }
+
+        Logger.d(Modules.CALCULATOR, "Calculadora aberta")
 
         // helper seguro (não quebra se o ID não existir)
         fun on(id: Int, action: () -> Unit) {

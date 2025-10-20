@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.hubapplication.databinding.ActivityNoteBinding;
+import com.example.hubapplication.utils.Logger
+import com.example.hubapplication.utils.Modules
+
 class NotesActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityNoteBinding
@@ -15,6 +18,8 @@ class NotesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityNoteBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        Logger.d(Modules.NOTES, "Bloco de notas aberto")
 
         db = NotesDatabaseHelper(this)
         notesAdapter = NotesAdapter(db.getAllNotes(), this)

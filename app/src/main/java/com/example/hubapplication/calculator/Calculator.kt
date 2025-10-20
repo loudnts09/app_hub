@@ -4,6 +4,8 @@ import android.os.Bundle
 import kotlin.math.log10
 import kotlin.math.pow
 import kotlin.math.sqrt
+import com.example.hubapplication.utils.Logger
+import com.example.hubapplication.utils.Modules
 
 class Calculator {
 
@@ -105,7 +107,10 @@ class Calculator {
         Op.POW -> a.pow(b)
     }
 
-    fun clearAll() { currentInput = "0"; operand = null; pendingOp = null; lastExpression = ""; replaceOnNextDigit = false }
+    fun clearAll() {
+        currentInput = "0"; operand = null; pendingOp = null; lastExpression = ""; replaceOnNextDigit = false
+        Logger.i(Modules.CALCULATOR, "Calculo apagado")
+    }
     fun backspace() {
         if (replaceOnNextDigit) { replaceOnNextDigit = false; currentInput = "0"; return }
         currentInput = when {

@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.hubapplication.databinding.ActivityAddNoteBinding
+import com.example.hubapplication.utils.Logger
+import com.example.hubapplication.utils.Modules
 
 class AddNoteActivity : AppCompatActivity() {
 
@@ -23,6 +25,7 @@ class AddNoteActivity : AppCompatActivity() {
             val note = Note(0, title, content)
             db.insertNote(note)
             finish()
+            Logger.i(Modules.NOTES, "Nota salva com sucesso")
             Toast.makeText(this, "Note Saved", Toast.LENGTH_SHORT).show()
         }
 
